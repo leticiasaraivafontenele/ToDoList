@@ -1,24 +1,30 @@
-import logo from './logo.svg';
+import { HashRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
+import Navbar from './components/Navbar/Navbar';
+import Container from './components/Container/container';
+import Home from './pages/Home'
+import NewTodo from './pages/NewTodo'
+import EditTodo from './pages/EditTodo'
+import MyTodos from './pages/MyTodos'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <HashRouter>
+      <Navbar/>
+      <Container customClass="minheight">
+        <Routes>
+          <Route exact path='/' element={<Home/>}>
+          </Route>
+          <Route path='/newtodo' element={<NewTodo/>}>
+          </Route>
+          <Route  path='/edittodo' element={<EditTodo/>}>
+          </Route>
+          <Route  path='/mytodos' element={<MyTodos/>}>
+          </Route>
+        </Routes>
+      </Container>
+      {/* <Footer/> */}
+    </HashRouter>
   );
 }
 
