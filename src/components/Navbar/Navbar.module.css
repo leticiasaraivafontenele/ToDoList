@@ -12,12 +12,13 @@
 }
 
 .item{
-    margin-right: 1.5em;
+    margin-right: 1em;
 }
 .item a{
     color: #FFF;
     text-decoration: none;
     font-weight: bold;
+    font-size: 1em;
 
 }
 .item a:hover{

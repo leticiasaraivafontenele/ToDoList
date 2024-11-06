@@ -1,13 +1,24 @@
 import { HashRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
+
 import Navbar from './components/Navbar/Navbar';
 import Container from './components/Container/container';
 import Home from './pages/Home'
 import NewTodo from './pages/NewTodo'
 import EditTodo from './pages/EditTodo'
 import MyTodos from './pages/MyTodos'
+import Footer from './components/Footer/Footer'
+
+import { useStoreActions } from './services/store/hooks';
+import { useEffect } from 'react';
 
 function App() {
+
+  const fetchTodo = useStoreActions((actions)=>actions.fetchTodos)
+  useEffect(()=>{
+      fetchTodo()
+  },[fetchTodo])
+
   return (
     <HashRouter>
       <Navbar/>
