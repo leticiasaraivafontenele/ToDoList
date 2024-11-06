@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'CustomFont';
-    src: url('../public/fonts/cocomat-pro-regular.ttf') format('truetype');
+    src: url('/src/assets/fonts/cocomat-pro-regular.ttf') format('truetype');
 }
 
 * {

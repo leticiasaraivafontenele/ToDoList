@@ -37,5 +37,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "babel-plugin-file-loader": "^2.0.0",
+    "file-loader": "^6.2.0"
   }
 }
