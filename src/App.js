@@ -28,7 +28,7 @@ function App() {
           </Route>
           <Route path='/newtodo' element={<NewTodo/>}>
           </Route>
-          <Route  path='/edittodo:id' element={<EditTodo/>}>
+          <Route  path='/edittodo/:id' element={<EditTodo/>}>
           </Route>
           <Route  path='/mytodos' element={<MyTodos/>}>
           </Route>
