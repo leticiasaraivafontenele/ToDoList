@@ -1,5 +1,7 @@
 export default function NewTodo(){
     return(
-        <p>NewTodo</p>
+        <>
+           <p>NewTodo</p>
+        </>
     )
 }

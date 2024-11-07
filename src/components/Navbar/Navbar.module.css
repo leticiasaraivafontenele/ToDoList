@@ -5,6 +5,17 @@
     padding: 1em;
 }
 
+.imag{
+    align-self: center;
+    display: flex;
+    width: 150px;
+    height: 35px;
+}
+
+.imag img {
+    width:100%;
+}
+
 .list{
     display: flex;
     list-style: none;
