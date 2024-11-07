@@ -8,13 +8,14 @@ interface IInputProps {
     placeholder: string
     value: string
     handlerOnChange: ChangeEventHandler<HTMLInputElement>
+    checked?: boolean
 }
 
-function Input({type, text, name, placeholder, handlerOnChange, value}:IInputProps){
+function Input({type, text, name, placeholder, handlerOnChange, value, checked}:IInputProps){
     return(
         <div className = {styles.form_controler}>
             <label htmlFor={name}>{text}</label>
-            <input type={type} id={name} onChange={handlerOnChange} value={value} name={name} placeholder={placeholder}></input>
+            <input type={type} id={name} onChange={handlerOnChange} value={value} checked={checked} name={name} placeholder={placeholder}></input>
         </div>
     )
 }

@@ -9,7 +9,7 @@ export default function Home(){
         <section className={styles.home_container}>
             <h1>Bem-vindo ao <span><img src={blackLogo} alt="ToDo List" /></span></h1>
             <p>Comece agora a gerenciar suas tarefas!</p>
-            <LinkButton to='/newtodo' text="Criar Projeto" />
+            <LinkButton to='/newtodo' text="Criar Tarefa" />
             <img src={listCheck} alt="ListCheck"></img>
         </section>
     )}

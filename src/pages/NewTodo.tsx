@@ -1,16 +1,15 @@
-import {useNavigate} from 'react-router-dom'
-// import ProjectForm from '../projects/ProjectForm'
 import styles from './NewTodo.module.css'
+import TodoForm from '../components/TodoForm/TodoForm'
+import { useStoreActions } from '../services/store/hooks'
 
 function NewTodo(){
 
-    const navigate = useNavigate()
+    const addTodo = useStoreActions((actions)=>actions.addTodo)
 
     return(
         <div className = {styles.newproject_container}>
             <h1>Criar Tarefa</h1>
-            <p>Crie seu projeto para depois adicionar sos serviços</p>
-            {/* <ProjectForm handleSubmit={creatPost} btnText="Criar Projeto"/> */}
+            <TodoForm  goTo='/mytodos' handleSubmit={addTodo} btnText="Criar Tarefa"/>
         </div>
     )
 }
