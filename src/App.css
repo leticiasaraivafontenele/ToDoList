@@ -2,6 +2,11 @@
     font-family: 'CustomFont';
     src: url('/src/assets/fonts/cocomat-pro-regular.ttf') format('truetype');
 }
+:root{
+    --darkPink:#ff8b94;
+    --mediumPink:#ffaaa5;
+    --lightPink:#ffe3e1;
+}
 
 * {
     font-family: 'CustomFont', sans-serif;
