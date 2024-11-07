@@ -1,4 +1,3 @@
-import { action } from "easy-peasy";
 import Container from "../components/Container/container";
 import LinkButton from "../components/LinkButton/LinkButton";
 import Message from "../components/Message/Message";
@@ -14,8 +13,8 @@ export default function MyTodos(){
         <div className={style.project_container}>
             <div className={style.title_container}>
                 <p></p>
-                <h1>Meus Projetos</h1>
-                <LinkButton to='/newproject' text="Criar ToDo" />
+                <h1>Minhas Tarefas</h1>
+                <LinkButton to='/newtodo' text="Criar ToDo" />
             </div>
 
             {/* {message && <Message msg={message} type="success"></Message>}
