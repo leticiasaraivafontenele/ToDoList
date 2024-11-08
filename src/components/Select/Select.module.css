@@ -1,0 +1,19 @@
+.form_controler{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+}
+
+.form_controler label{
+    margin-bottom: .6em;
+    font-weight: bold;
+    color: var(--darkPink);
+}
+.form_controler select{
+    padding: .7em;
+    border-radius: 0;
+    border: 1px solid var(--darkPink);
+    outline: none;
+    background-color: white;
+
+}
