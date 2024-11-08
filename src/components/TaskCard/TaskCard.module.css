@@ -3,12 +3,15 @@
     border: 1px solid var(--darkPink);
     border-radius: 10px;
     width: 23%;
+    height: 16em;
 }
 .project_card h4{
     color: var(--lightPink);
     font-size: 1.3em;
     font-weight: bolder;
     padding-left: .4em;
+    margin: 0px;
+    max-height: 100%;
 }
 .project_card p{
     color: #7a7a7a;
@@ -20,15 +23,21 @@
 }
 .project_paper {
     padding: 0em 1em 1em 1em;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    height: 5em;
 }
 .project_header{
     box-sizing: border-box;
     background-color: var(--darkPink);
     display: flex;
     border-radius: 10px 10px 0px 0px;
-    padding: 1em;
+    padding-left: 1.5em;
     align-items: center;
     height: 4em;
+    overflow-y: scroll;
+    overflow-x: scroll;
+    scrollbar-width: none;
 }
 
 .category_text{
@@ -100,5 +109,6 @@
     margin: 1em;
 }
 .btn_completed button:hover{
-    color: var(--mediumPink);
+    background-color: var(--mediumPink);
+    cursor: pointer;
 }

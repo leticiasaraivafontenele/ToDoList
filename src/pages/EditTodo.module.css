@@ -2,10 +2,15 @@
     width: 450px;
     margin: 0 auto;
     padding: 3em;
+    display: flex;
+    flex-direction: column;
+
 }
 
 .newproject_container h1{
-    margin-bottom: .5em;
+    margin-bottom: .1em;
+    align-self: center;
+    justify-self: center;
     
 }
 

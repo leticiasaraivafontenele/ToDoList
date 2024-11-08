@@ -6,7 +6,7 @@ interface ISubmitButtonProps {
 
 function SubtmitButton({text}:ISubmitButtonProps){
     return(
-        <div >
+        <div className={styles.btn_div}>
             <button className={styles.btn}>{text}</button>
         </div>
     )
